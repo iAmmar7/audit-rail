@@ -1,0 +1,35 @@
+@import '~antd/es/style/themes/default.less';
+
+.issue_image_container {
+  .issue_image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .issue_delete_btn {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 6px;
+    margin-top: 6px;
+    background-color: #bfbfbf;
+    border-radius: 50%;
+    transition: all 0.5s;
+
+    &:hover {
+      font-size: 22px;
+    }
+  }
+}

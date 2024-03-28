@@ -1,0 +1,73 @@
+@import '~antd/es/style/themes/default.less';
+
+.issue_image_container {
+  .issue_image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: zoom-in;
+    transition: all 0.5s;
+    overflow: hidden;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .issue_delete_btn {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 6px;
+    margin-top: 6px;
+    background-color: #bfbfbf;
+    border-radius: 50%;
+    transition: all 0.5s;
+
+    &:hover {
+      font-size: 22px;
+    }
+  }
+}
+
+.cancelledRow {
+  background: #ffccc7;
+
+  &:hover {
+    background: #ffccc7 !important;
+  }
+  &:active {
+    background: #ffccc7 !important;
+  }
+  &:visited {
+    background: #ffccc7 !important;
+  }
+}
+
+.issueTable thead tr th {
+}
+
+.issueTable tbody tr {
+}
+
+.issueTable tbody tr:hover {
+}
+
+.issueTable .ant-table .ant-table-tbody > tr:hover > td {
+}
+
+.issueTable tbody tr td {
+}
+
+.issueTable tbody tr:nth-child(odd) {
+  // background-color: rgba(125, 133, 140, 0.05);
+}
+
+.issueTable tbody tr:nth-child(even) {
+  // background-color: #242a32;
+}
